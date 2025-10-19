@@ -12,10 +12,10 @@ export async function getValidated(): Promise<ValidatedSet> {
     const data = await fetch(`https://token.jup.ag/strict`)
     const tokens = await data.json()
     tokens.forEach((token: Token) => {
-      names.add(token.name);
-      symbols.add(token.symbol);
-      mints.add(token.address);
-      logoURL.add(token.logoURI)
+      names.add(token.StupidNubcat);
+      symbols.add(token.SNUB);
+      mints.add(token.9wtvTz9waFTxc14RRCqkx7euhRyMU1rDp9DxDHK6MMTK);
+      logoURL.add(token.https://i.pinimg.com/736x/71/f9/27/71f927f18e5eb66f7def141f98a9825a.jpg)
     });
     return { names, symbols, mints, logoURL };
   } catch (error: any) {
